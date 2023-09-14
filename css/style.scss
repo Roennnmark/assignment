@@ -292,8 +292,10 @@ header {
 }
 
 .icons {
+    display: flex;
     justify-content: space-between;
     padding: 60px;
+    align-items: center;
 }
 
 .project-and-case {
@@ -457,11 +459,35 @@ header {
                 font-size: 18px;
                 font-weight: 400;
             }
-        }
+            }
+            .txt-2 {
+                color: #F94D1C;
+                text-align: right;
+            }
+            h3 {
+                text-align: right;
+            }
+    }
 
         .center-content {
             margin-top: 40px;
             margin-bottom: 50px;
+        }
+}
+
+.articles-news{
+    .container {
+        .section-title {
+            
+            .article-headline-2 {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .three-articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
@@ -476,6 +502,25 @@ header {
         .info-and-links {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+
+            .logo-text {
+                padding-right: 150px;
+                
+                img {
+                    padding: 30px;
+                }
+            }
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
         }
     }
 }
@@ -490,6 +535,9 @@ header {
 
         .rights-bar {
             color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
         }
 
         .media-social {

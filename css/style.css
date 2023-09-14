@@ -282,8 +282,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 
 .icons {
+  display: flex;
   justify-content: space-between;
   padding: 60px;
+  align-items: center;
 }
 
 .project-and-case .container .section-title {
@@ -418,9 +420,25 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-size: 18px;
   font-weight: 400;
 }
-.client-comments .container .center-content {
+.client-comments .container .txt-2 {
+  color: #F94D1C;
+  text-align: right;
+}
+.client-comments .container h3 {
+  text-align: right;
+}
+.client-comments .center-content {
   margin-top: 40px;
   margin-bottom: 50px;
+}
+
+.articles-news .container .section-title .article-headline-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.articles-news .container .three-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-info-bar {
@@ -433,6 +451,23 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .footer-info-bar .container .info-and-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.footer-info-bar .container .info-and-links .logo-text {
+  padding-right: 150px;
+}
+.footer-info-bar .container .info-and-links .logo-text img {
+  padding: 30px;
+}
+.footer-info-bar .container p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer-info-bar .container h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .footer-bar {
@@ -446,6 +481,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .footer-bar .container .rights-bar {
   color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .footer-bar .container .media-social a {
   color: #FFFFFF;
