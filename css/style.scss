@@ -309,6 +309,8 @@ header {
 .features {
     .container {
         margin-bottom: 50px;
+        border-color: 1px solid black;
+        padding: 100px;
         .sections-3 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -332,14 +334,17 @@ header {
         gap: 200px;
 
         .company-section-1 {
-    
+            
+            img {
+                margin-left: 50px;
+            }
             .company-box {
                 position: relative;
                 top: -220px;
-                left: -50px;
+                left: 0;
                 background-color: #BEEBFF;
                 padding: 40px;
-                margin-right: 172px;
+                margin-right: 222px;
 
                 p {
                     font-family: 'Inter', sans-serif;
@@ -371,7 +376,6 @@ header {
                 padding-top: 50px;
             }
         }
-
     }
 }
 
@@ -641,6 +645,33 @@ header {
                 font-size: 22px;
             }
         }
+        .date-box-1 {
+            width: 55px;
+            height: 65px;;
+            position: relative;
+            top: -422px;
+            left: 10px;
+            background-color: #F0D082;
+            text-align: center;
+        }
+        .date-box-2 {
+            width: 55px;
+            height: 65px;;
+            position: relative;
+            top: -485px;
+            left: 462px;
+            background-color: #F0D082;
+            text-align: center;
+        }
+        .date-box-3 {
+            width: 55px;
+            height: 65px;;
+            position: relative;
+            top: -550px;
+            left: 912px;
+            background-color: #F0D082;
+            text-align: center;
+        }
     }
 }
 
@@ -689,6 +720,7 @@ header {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             align-items: center;
+            margin-right: -150px;
 
             .logo-text {
                 padding-right: 150px;
