@@ -296,6 +296,113 @@ header {
     justify-content: space-between;
     padding: 60px;
     align-items: center;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.about-company {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 200px;
+
+        .company-section-1 {
+    
+            img {
+
+            }
+            .company-box {
+                position: relative;
+                top: -220px;
+                left: -50px;
+                background-color: #BEEBFF;
+                padding: 40px;
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+            }
+
+        }
+        .company-section-2 {
+            padding: 100px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: -300px;
+
+            .section-title {
+                margin-bottom: -50px;
+            }
+
+            .move-buttons {
+                padding-top: 50px;
+            }
+        }
+
+    }
+}
+
+.our-services {
+    background-color: #F0EFE9;
+    padding-bottom: 100px;
+
+    .container {
+
+        .section-title {
+
+        }
+
+        .different-services {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                padding-top: 20px;
+                color: #6e6e6c;
+            }
+
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+            }
+            .box-1 {
+                background-color: #FFFFFF;
+                padding: 80px 30px;
+
+            }
+            .box-2 {
+                background-color: #F0D082;
+                padding: 80px 30px;
+            }
+
+            .btn-black {
+                padding: 8px 10px;
+            }
+        }
+
+        .center-content {
+            padding-top: 40px;
+        }
+
+    }
 }
 
 .project-and-case {
@@ -476,6 +583,7 @@ header {
 }
 
 .articles-news{
+    margin-bottom: 40px;
     .container {
         .section-title {
             
@@ -488,6 +596,55 @@ header {
         .three-articles {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                padding-top: 20px;
+                color: #6e6e6c;
+            }
+
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.search-bar {
+    background-color: #F0EFE9;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+    .background-lines-right {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        form {
+            input {
+                padding: 15px 25px;
+                border-radius: 25px;
+                outline: none;
+                border: none;
+                margin-right: 20px;
+            }
         }
     }
 }
@@ -521,13 +678,14 @@ header {
             font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             font-size: 22px;
+            padding-bottom: 30px;
         }
     }
 }
 
 .footer-bar {
     background-color: #0E1021;
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #414040;
     .container {
         display: flex;
         justify-content: space-between;
