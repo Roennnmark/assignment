@@ -333,7 +333,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 200px;
+  gap: 130px;
 }
 .about-company .container .company-section-1 img {
   margin-left: 50px;
@@ -371,12 +371,19 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-size: 15px;
   font-weight: 400;
   margin-top: -300px;
+  margin-right: -90px;
 }
 .about-company .container .company-section-2 .section-title {
   margin-bottom: -50px;
 }
 .about-company .container .company-section-2 .move-buttons {
-  padding-top: 50px;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  padding-top: 100px;
+}
+.about-company .container .company-section-2 .move-buttons .btn-transparent {
+  padding: 15px 15px;
 }
 
 .our-services {
@@ -387,6 +394,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+.our-services .container .different-services h2 {
+  margin-top: -50px;
+  margin-bottom: 30px;
 }
 .our-services .container .different-services p {
   font-family: "Inter", sans-serif;
@@ -410,6 +421,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .our-services .container .different-services .btn-black {
   padding: 8px 10px;
+  margin-left: 200px;
 }
 .our-services .container .center-content {
   padding-top: 40px;
@@ -420,6 +432,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .choose-us .container .left-section {
   margin-right: 300px;
+}
+.choose-us .container .left-section .icon-text {
+  display: flex;
+  gap: 25px;
+}
+.choose-us .container .left-section .icon-text .icon-text-1 {
+  border-color: black;
 }
 .choose-us .container .right-section {
   margin-top: 120px;
@@ -552,7 +571,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: grid;
   grid-template-columns: 1fr;
   padding: 5px 100px;
-  gap: 80px;
+  gap: 50px;
 }
 @media (min-width: 768px) {
   .client-comments .container .comments-from-clients {
@@ -573,6 +592,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .client-comments .container h3 {
   text-align: right;
+}
+.client-comments .container .img-text {
+  display: flex;
+  gap: 15px;
+}
+.client-comments .container .img-text .img-text-2 {
+  align-items: start;
 }
 .client-comments .center-content {
   margin-top: 40px;

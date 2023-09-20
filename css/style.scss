@@ -90,6 +90,7 @@ html, body {
     display: inline-block;
     opacity: 0.5;
 }
+
 .dot-2 {
     height: 12px;
     width: 12px;
@@ -347,7 +348,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 200px;
+        gap: 130px;
 
         .company-section-1 {
             
@@ -392,13 +393,20 @@ header {
             font-size: 15px;
             font-weight: 400;
             margin-top: -300px;
+            margin-right: -90px;
 
             .section-title {
                 margin-bottom: -50px;
             }
 
             .move-buttons {
-                padding-top: 50px;
+                display: flex;
+                align-items: end;
+                gap: 30px;
+                padding-top: 100px;
+                .btn-transparent {
+                    padding: 15px 15px;
+                }
             }
         }
     }
@@ -415,6 +423,10 @@ header {
             justify-content: space-between;
             gap: 30px;
 
+            h2 {
+                margin-top: -50px;
+                margin-bottom: 30px;
+            }
             p {
                 font-family: 'Inter', sans-serif;
                 font-size: 15px;
@@ -440,6 +452,7 @@ header {
 
             .btn-black {
                 padding: 8px 10px;
+                margin-left: 200px;
             }
         }
 
@@ -456,7 +469,17 @@ header {
 
         .left-section {
             margin-right: 300px;
+
+            .icon-text {
+                display: flex;
+                gap: 25px;
+
+                .icon-text-1 {
+                    border-color: black;
+                }
+            }
         }
+
         .right-section {
             margin-top: 120px;
         }
@@ -617,7 +640,7 @@ header {
             display: grid;
             grid-template-columns: 1fr;
             padding: 5px 100px;
-            gap: 80px;
+            gap: 50px;
             @media (min-width: 768px) {
                 grid-template-columns: 1fr 1fr 1fr;
             }
@@ -638,6 +661,14 @@ header {
             }
             h3 {
                 text-align: right;
+            }
+            .img-text {
+                display: flex;
+                gap: 15px;
+
+                .img-text-2 {
+                    align-items: start;
+                }
             }
     }
 
