@@ -314,16 +314,53 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .features .container {
   margin-bottom: 50px;
   border-color: 1px solid black;
-  padding: 100px;
+  padding: 120px 100px;
 }
 .features .container .sections-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
 }
+.features .container .sections-3 h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.features .container .sections-3 p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 .features .container .sections-3 .section-title {
   margin-top: -100px;
   padding: 30px;
+  margin-right: -150px;
+}
+.features .container .sections-3 .section-title .btn-yellow {
+  display: flex;
+}
+.features .container .sections-3 .section-two {
+  margin-left: 100px;
+  margin-right: -20px;
+  margin-top: -60px;
+}
+.features .container .sections-3 .section-two i {
+  padding-bottom: 40px;
+}
+.features .container .sections-3 .section-two p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.features .container .sections-3 .section-three {
+  margin-left: 10px;
+  margin-top: -60px;
+}
+.features .container .sections-3 .section-three i {
+  padding-bottom: 40px;
+}
+.features .container .sections-3 .section-three p {
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .about-company {
@@ -343,7 +380,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   top: -220px;
   left: 0;
   background-color: #BEEBFF;
-  padding: 40px;
+  padding: 30px;
   margin-right: 222px;
 }
 .about-company .container .company-section-1 .company-box p {
@@ -427,21 +464,61 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   padding-top: 40px;
 }
 
+.choose-us {
+  z-index: 0;
+}
 .choose-us .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -250px;
 }
 .choose-us .container .left-section {
-  margin-right: 300px;
+  margin-right: -160px;
+}
+.choose-us .container .left-section h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.choose-us .container .left-section p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 .choose-us .container .left-section .icon-text {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10px;
+}
+.choose-us .container .left-section .icon-text i {
+  border: 1px solid rgb(184, 183, 183);
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  padding: 7px;
+  line-height: 1em;
 }
 .choose-us .container .left-section .icon-text .icon-text-1 {
   border-color: black;
 }
 .choose-us .container .right-section {
   margin-top: 120px;
+}
+.choose-us .container .right-section .two-woman {
+  margin-right: 200px;
+  position: relative;
+  right: -400px;
+  top: 0;
+}
+.choose-us .container .right-section .box-behind-img {
+  height: 425px;
+  width: 1056px;
+  background-color: #F0EFE9;
+  position: relative;
+  right: -300px;
+  bottom: 300px;
+  z-index: -1;
 }
 
 .project-and-case .container .section-title {
@@ -543,6 +620,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-size: 22px;
   padding: 20px;
   text-align: left;
+  margin-left: -20px;
+  margin-bottom: -15px;
 }
 .team-members .container .head-members p {
   font-family: "Inter", sans-serif;
@@ -607,6 +686,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 
 .articles-news {
   padding-bottom: 50px;
+}
+.articles-news .container .section-title {
+  margin-bottom: -30px;
 }
 .articles-news .container .section-title .article-headline-2 {
   display: flex;
