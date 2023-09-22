@@ -324,6 +324,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   border-color: 1px solid black;
   padding: 120px 100px;
 }
+.features .container .container-expand {
+  max-width: 2500px;
+}
 .features .container .sections-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -346,6 +349,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .features .container .sections-3 .section-title .btn-yellow {
   display: flex;
+  justify-content: center;
 }
 .features .container .sections-3 .section-two {
   margin-left: 100px;
@@ -471,6 +475,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .our-services .container .different-services .box-2 {
   background-color: #F0D082;
   padding: 80px 30px;
+}
+.our-services .container .different-services .box-2 .btn-black {
+  background-color: #FFFFFF;
+  border: none;
+}
+.our-services .container .different-services .box-2 .btn-black i {
+  color: black;
 }
 .our-services .container .different-services .btn-black {
   padding: 8px 10px;
@@ -819,6 +830,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .footer-info-bar .container .info-and-links .logo-text img {
   padding: 30px;
+  margin-left: -30px;
 }
 .footer-info-bar .container p {
   font-family: "Inter", sans-serif;

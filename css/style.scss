@@ -332,11 +332,14 @@ header {
 }
 
 .features {
-
+    
     .container {
         margin-bottom: 50px;
         border-color: 1px solid black;
         padding: 120px 100px;
+        .container-expand {
+            max-width: 2500px;
+        }
 
         .sections-3 {
             display: grid;
@@ -360,6 +363,7 @@ header {
                 margin-right: -150px;
                 .btn-yellow {
                     display: flex;
+                    justify-content: center;
                 }
             }
             .section-two {
@@ -504,6 +508,13 @@ header {
             .box-2 {
                 background-color: #F0D082;
                 padding: 80px 30px;
+                .btn-black {
+                    background-color: #FFFFFF;
+                    border: none;
+                    i{
+                        color: black;
+                    }
+                }
             }
 
             .btn-black {
@@ -910,6 +921,7 @@ header {
                 
                 img {
                     padding: 30px;
+                    margin-left: -30px;
                 }
             }
         }
