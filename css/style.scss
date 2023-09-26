@@ -340,7 +340,7 @@ header {
         height: 600px;
         border: 1px solid #DAD9D3;
         position: absolute;
-        top: 0;
+        top: -50px;
         left: 200px;
         z-index: -1;
 
@@ -357,6 +357,7 @@ header {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 100px;
+            margin-left: -100px;
 
             h3 {
                 font-family: 'DM Sans', sans-serif;
@@ -371,7 +372,7 @@ header {
 
             .section-title {
                 margin-top: -100px;
-                padding: 30px;
+                padding: 40px;
                 margin-right: -150px;
 
                 .btn-yellow {
@@ -380,7 +381,7 @@ header {
                 }
             }
             .section-two {
-                margin-left: 100px;
+                margin-left: 150px;
                 margin-right: -20px;
                 margin-top: -60px;
                 i {
@@ -392,7 +393,7 @@ header {
                 }
             }
             .section-three {
-                margin-left: 10px;
+                margin-right: 100px;
                 margin-top: -60px;
                 i {
                     padding-bottom: 40px;
@@ -506,7 +507,6 @@ header {
                 font-size: 15px;
                 font-weight: 400;
                 padding-top: 20px;
-                color: #6e6e6c;
             }
 
             h3 {
@@ -575,6 +575,10 @@ header {
                     border-radius: 50px;
                     padding: 7px;
                     line-height: 1em;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+
                 }
 
                 .icon-text-1 {
@@ -1074,4 +1078,52 @@ header {
         }
     }
 
+}
+
+.message-section {
+    
+    .container {
+        background-color: #F0EFE9;
+        margin-bottom: 100px;
+        padding-bottom: 130px;
+        padding-top: 80px;
+
+        .head-text {
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 45px;  
+            padding-bottom: 20px;
+        }
+
+        .type-fields {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-left: 150px;
+            margin-right: 150px;
+
+            .write-text-1 {
+                padding: 20px;
+                border-radius: 45px;
+                border: none;
+            }
+
+            .write-text-2 {
+                padding: 80px;
+                text-align: start;
+                border-radius: 45px;
+                border: none;
+            }
+        }
+
+        .btn-yellow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+        }
+    }
 }
