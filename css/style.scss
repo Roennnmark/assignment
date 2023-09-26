@@ -332,7 +332,19 @@ header {
 }
 
 .features {
+    position: relative;
+    z-index: 0;
     
+    .box-boxx {
+        width: 1520px;
+        height: 600px;
+        border: 1px solid #DAD9D3;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        z-index: -1;
+
+    }
     .container {
         margin-bottom: 50px;
         border-color: 1px solid black;
@@ -361,6 +373,7 @@ header {
                 margin-top: -100px;
                 padding: 30px;
                 margin-right: -150px;
+
                 .btn-yellow {
                     display: flex;
                     justify-content: center;
@@ -906,6 +919,14 @@ header {
 .footer-info-bar {
     background-color: #0E1021;
     color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+    .lines-footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
 
     .container {
         padding: 60px;
@@ -968,4 +989,89 @@ header {
         }
 
     }
+}
+
+//Connect page
+.lets-connect {
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+    .lines-connect {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .container {
+        
+        .connect-title {
+            text-align: center;
+            padding: 40px;
+
+            h1 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+            }
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.info-section {
+
+    .container {
+        padding: 120px;
+
+        .info-boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            .box-one {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px;
+
+                a {  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #191919;
+                    border: 1px solid #191919;
+                    border-radius: 60px;
+                    width: 60px;
+                    text-decoration: none;
+                    aspect-ratio: 1;
+                    margin-top: -65px;
+                    margin-right: 25px;
+                    i {
+                        color: #FFFFFF;
+                    }
+                    &:hover, &:hover i  {
+                        background-color: #FFFFFF;
+                        color: #191919;
+                    }
+                }
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
 }
