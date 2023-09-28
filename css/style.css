@@ -560,7 +560,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   }
   .our-services .container .different-services .box-2 .btn-black:hover {
     background-color: #191919;
-    border: 1px solid #191919;
     color: #FFFFFF;
   }
   .our-services .container .different-services .box-2 .btn-black:hover i {
