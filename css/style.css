@@ -32,7 +32,9 @@ html, body {
 .btn-yellow:hover {
   background-color: #191919;
   border: 1px solid #191919;
+  box-shadow: 5px 5px 3px 2px #414040;
   color: #F0EFE9;
+  cursor: pointer;
 }
 
 .btn-black {
@@ -53,6 +55,8 @@ html, body {
   background-color: #FFFFFF;
   border: 1px solid #191919;
   color: #191919;
+  box-shadow: 5px 5px 3px 2px #414040;
+  cursor: pointer;
 }
 
 .btn-transparent {
@@ -73,6 +77,8 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+  box-shadow: 5px 5px 3px 2px #414040;
+  cursor: pointer;
 }
 
 .dot {
@@ -504,7 +510,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     padding-top: 100px;
   }
   .about-company .container .company-section-2 .move-buttons .btn-transparent {
-    padding: 15px 15px;
+    padding: 12px 15px;
   }
 }
 
