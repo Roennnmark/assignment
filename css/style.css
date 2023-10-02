@@ -110,7 +110,15 @@ html, body {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  .section-title h2 {
+    color: #191919;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
 }
 
 .center-content {
@@ -378,8 +386,16 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     margin-right: -150px;
   }
   .features .container .sections-3 .section-title h2 {
-    margin-bottom: 30px;
+    font-size: 18px;
   }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .features .container .sections-3 .section-title h2 {
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+}
+@media (min-width: 768px) {
   .features .container .sections-3 .section-title .btn-yellow {
     display: flex;
     justify-content: center;
@@ -515,11 +531,17 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   grid-template-columns: 1fr;
   gap: 15px;
 }
+.our-services .container .different-services h2 {
+  display: none;
+}
 @media (min-width: 550px) {
   .our-services .container .different-services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+  .our-services .container .different-services h2 {
+    display: none;
   }
 }
 @media (min-width: 1410px) {
@@ -529,6 +551,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     gap: 30px;
   }
   .our-services .container .different-services h2 {
+    display: block;
     margin-top: -50px;
     margin-bottom: 30px;
   }
@@ -658,8 +681,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   }
 }
 
-.project-and-case .container .section-title {
-  text-align: center;
+@media (min-width: 1400px) {
+  .project-and-case .container .section-title {
+    text-align: center;
+    margin-top: -200px;
+  }
 }
 .project-and-case .container .project-and-cases img {
   display: none;
@@ -696,12 +722,24 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .project-and-case .container .project-and-cases article a {
   padding: 15px;
   display: block;
-  text-align: right;
+  text-align: left;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #191919;
+}
+@media (min-width: 560px) {
+  .project-and-case .container .project-and-cases article a {
+    padding: 15px;
+    display: block;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #191919;
+  }
 }
 .project-and-case .container .project-and-cases article a i {
   margin-left: 3px;
@@ -817,9 +855,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .client-comments .container {
   padding-bottom: 50px;
-}
-.client-comments .container .section-title h2 {
-  font-size: 30px;
 }
 @media (min-width: 768px) {
   .client-comments .container .section-title {
@@ -1261,11 +1296,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   margin-top: 40px;
 }
 
-.map-image {
-  display: none;
-}
-@media (min-width: 1600px) {
-  .map-image {
-    display: block;
-  }
+.map-image iframe {
+  width: 100%;
 }

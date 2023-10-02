@@ -116,7 +116,13 @@ html, body {
         color: #191919;
         font-family: 'DM Sans', sans-serif;
         font-weight: 700;
-        font-size: 40px;        
+        font-size: 25px;   
+        @media (min-width: 768px) {
+            color: #191919;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 40px;    
+        }
     }
 }
 
@@ -387,7 +393,12 @@ header {
                     margin-right: -150px;
                     
                     h2 {
-                        margin-bottom: 30px;
+                        font-size: 18px;
+                        @media (min-width: 768px) {
+                            margin-bottom: 30px;
+                            font-size: 45px;
+                        }
+                        
                     }
                     .btn-yellow {
                         display: flex;
@@ -538,11 +549,17 @@ header {
             display: grid;
             grid-template-columns: 1fr;
             gap: 15px;
+            h2 {
+                display: none;
+            }
 
             @media (min-width: 550px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 30px;
+                h2 {
+                    display: none;
+                }
             }
 
             @media (min-width: 1410px) {
@@ -551,8 +568,10 @@ header {
                 gap: 30px;
     
                 h2 {
+                    display: block;
                     margin-top: -50px;
                     margin-bottom: 30px;
+
                 }
                 p {
                     font-family: 'Inter', sans-serif;
@@ -699,7 +718,11 @@ header {
     .container {
 
         .section-title {
-            text-align: center;
+            @media (min-width: 1400px) {
+                text-align: center;
+                margin-top: -200px;
+            }
+
         }
 
         .project-and-cases {
@@ -741,12 +764,23 @@ header {
                 a {
                     padding: 15px;
                     display: block;
-                    text-align: right;
+                    text-align: left;
                     font-family: 'Inter', sans-serif;
                     font-size: 14px;
                     font-weight: 500;
                     text-decoration: none;
                     color: #191919;
+                    @media (min-width: 560px) {
+                        padding: 15px;
+                        display: block;
+                        text-align: right;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: #191919;
+                    }
+
 
                     i {
                         margin-left: 3px;
@@ -887,9 +921,6 @@ header {
         padding-bottom: 50px;
 
         .section-title {
-            h2 {
-                font-size: 30px;
-            }
             
             @media (min-width: 768px) {
                 text-align: center;
@@ -1375,8 +1406,8 @@ header {
 }
 
 .map-image {
-    display: none;
-    @media (min-width: 1600px) {
-        display: block;
+    iframe {
+        width: 100%;
     }
+
 }
